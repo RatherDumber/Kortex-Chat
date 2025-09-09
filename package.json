@@ -1,0 +1,19 @@
+{
+  "name": "kortex-inspired-chat",
+  "version": "1.0.0",
+  "description": "Real-time chat app with dark UI inspired by Kortex.co",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Generated",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0"
+  }
+}

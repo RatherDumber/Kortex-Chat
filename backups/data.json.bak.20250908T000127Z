@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "user-4ff1c901-df24-421f-8d64-adf7abfe4e17",
+      "username": "admin",
+      "passwordHash": "$2b$10$JmYUn2d.YfLc6OCJbZQLxu1fkvEfRdavwO9XP7gVp3OXWy4ZkyWbK",
+      "contactNumber": "C-640095",
+      "createdAt": 1757254013454,
+      "lastSeen": 1757288962186
+    }
+  ],
+  "chats": [
+    {
+      "id": "inbox-admin",
+      "type": "inbox",
+      "participants": [
+        "admin"
+      ],
+      "messages": [
+        }
+      ],
+      "updatedAt": 1757288946331
+    }
+  ],
+  "messages": {},
+  "contactRequests": [],
+  "meta": {
+    "lastModified": 1757289582687
+  }
+}

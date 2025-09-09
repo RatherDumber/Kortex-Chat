@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kortex-like Chat</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="app" class="dark">
+    <aside id="sidebar" class="sidebar">
+      <header class="brand">
+        <div class="logo">KX</div>
+        <div class="title">Kortex Chat</div>
+      </header>
+
+      <nav class="tabs">
+        <button data-tab="chats" class="tab active">Chats</button>
+        <button data-tab="inbox" class="tab">Inbox</button>
+        <button data-tab="contacts" class="tab">Contacts</button>
+        <button data-tab="settings" class="tab">Settings</button>
+      </nav>
+
+      <div class="tab-panels">
+        <section id="panel-chats" class="panel active">
+          <div class="search">
+            <input id="searchChats" class="input" placeholder="Search chats..." />
+          </div>
+          <ul id="chatList" class="list"></ul>
+          <p class="muted small" style="margin-top:12px;">Contact the owner: Unavailable</p>
+        </section>
+
+        <section id="panel-inbox" class="panel">
+          <div class="search">
+            <input id="searchInbox" class="input" placeholder="Search inbox..." />
+          </div>
+          <ul id="inboxList" class="list"></ul>
+        </section>
+
+        <section id="panel-contacts" class="panel">
+          <div class="search">
+            <input id="searchContacts" class="input" placeholder="Search contacts..." />
+          </div>
+
+          <div class="send-request" style="display:flex;gap:8px;align-items:center;margin:10px 0;">
+            <input id="contactUsername" class="input" placeholder="Username or Contact # (e.g., C-123456)" />
+            <button id="sendRequestBtn" class="btn primary">Send</button>
+          </div>
+          <div id="requestStatus" class="muted small" style="padding-left:6px"></div>
+
+          <ul id="contactList" class="list"></ul>
+        </section>
+
+        <section id="panel-settings" class="panel">
+          <div class="settings">
+            <div class="me-card" style="display:flex;align-items:center;gap:10px;">
+              <div id="meAvatar" class="avatar small">--</div>
+              <div>
+                <div id="meName" class="bold">Not signed in</div>
+                <div id="meContact" class="small muted">Contact: -</div>
+              </div>
+            </div>
+
+            <div style="margin-top:12px;display:flex;gap:8px;align-items:center;">
+              <button id="copyContactBtn" class="btn">Copy my contact</button>
+              <button id="logoutBtn" class="btn ghost">Logout</button>
+            </div>
+
+            <p class="muted small" style="margin-top:12px;">Dark theme, minimal auth. Use contact numbers to add others.</p>
+          </div>
+        </section>
+
+    <main class="main">
+      <div class="topbar">
+        <div id="currentChatTitle">Welcome</div>
+        <div class="spacer"></div>
+        <div id="userStatus" class="muted small"></div>
+      </div>
+
+      <div id="chatArea" class="chat-area">
+        <div id="messages" class="messages empty">
+          <div class="placeholder">Select a chat to start messaging.</div>
+        </div>
+
+        <form id="messageForm" class="composer" style="display:none;">
+          <input id="messageInput" class="input" placeholder="Type a message..." autocomplete="off" />
+          <button type="submit" class="btn primary send-btn">Send</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Authentication modal -->
+    <div id="authModal" class="modal" style="display:none;">
+      <div class="modal-inner">
+        <h2 id="authTitle">Sign in</h2>
+        <form id="authForm">
+          <input id="authUsername" class="input" placeholder="Username (no email)" required />
+          <input id="authPassword" class="input" type="password" placeholder="Password" required />
+          <div class="row" style="margin-top:8px;">
+            <button id="authSubmit" type="submit" class="btn primary">Sign in</button>
+            <button id="toggleAuthMode" type="button" class="btn ghost">Create account</button>
+          </div>
+        </form>
+        <div id="authError" class="error" style="margin-top:8px;"></div>
+        <div class="muted small" style="margin-top:12px;">
+          When you register you'll receive a contact number (e.g. C-123456) to share with others.
+        </div>
+      </div>
+    </div>
+
+    <!-- Add AI floating widget -->
+    <div id="ai-widget">
+      <button id="ai-widget-btn">💬 AI</button>
+      <div id="ai-widget-chat" style="display:none;">
+        <div id="ai-widget-header">
+          <span>AI Assistant</span>
+          <button id="ai-widget-close">×</button>
+        </div>
+        <div id="ai-widget-history"></div>
+        <div id="ai-widget-input-row">
+          <textarea id="ai-widget-input" placeholder="Ask the AI..."></textarea>
+          <button id="ai-widget-send">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "users": [
+    {
+      "id": "user-4ff1c901-df24-421f-8d64-adf7abfe4e17",
+      "username": "admin",
+      "passwordHash": "$2b$10$JmYUn2d.YfLc6OCJbZQLxu1fkvEfRdavwO9XP7gVp3OXWy4ZkyWbK",
+      "contactNumber": "C-640095",
+      "createdAt": 1757254013454,
+      "lastSeen": 1757288962186
+    },
+    {
+      "id": "user-c709d367-4b43-4b6a-980a-e34c255b00c0",
+      "username": "test2",
+      "passwordHash": "$2b$10$VgQ8kcYrRGwxlauY4cr2E.JSWkNWwTrrWXcpGSFJ03ZkXeUODu4qe",
+      "contactNumber": "C-812606",
+      "createdAt": 1757255898906,
+      "lastSeen": 1757256041198
+    },
+    {
+      "id": "user-5f84a393-54b8-4328-99f7-520e33cfa8bf",
+      "username": "brr",
+      "passwordHash": "$2b$10$cPDX7y1HG7r3WSrZErb4c.L8UOgrctvsJFElN4w4aT4EcprFMcJ5u",
+      "contactNumber": "C-250280",
+      "createdAt": 1757288882775,
+      "lastSeen": 1757288965092
+    }
+  ],
+  "chats": [
+    {
+      "id": "inbox-admin",
+      "type": "inbox",
+      "participants": [
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "m-2bc6690a-346f-4a6a-ab3d-376357baff8e",
+          "sender": "system",
+          "text": "brr sent you a contact request.",
+          "timestamp": 1757288930419,
+          "meta": {
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e",
+            "type": "contact_request",
+            "from": "brr"
+          }
+        },
+        {
+          "id": "m-490a941b-6c72-4512-9cea-f366d8e2afea",
+          "sender": "system",
+          "text": "You accepted brr's contact request. A chat has been created.",
+          "timestamp": 1757288946331,
+          "meta": {
+            "type": "contact_accepted",
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e"
+          }
+        }
+      ],
+      "updatedAt": 1757288946331
+    },
+    {
+      "id": "inbox-test2",
+      "type": "inbox",
+      "participants": [
+        "test2"
+      ],
+      "messages": [],
+      "updatedAt": 1757255898906
+    },
+    {
+      "id": "chat-dbd0f24c-aa56-476c-a306-023781a534a0",
+      "type": "direct",
+      "participants": [
+        "test2",
+        "admin"
+      ],
+      "messages": [],
+      "updatedAt": 1757255907814
+    },
+    {
+      "id": "inbox-brr",
+      "type": "inbox",
+      "participants": [
+        "brr"
+      ],
+      "messages": [
+        {
+          "id": "m-5dad4899-d423-4c4a-b5e9-72c7aaf269b5",
+          "sender": "system",
+          "text": "admin accepted your contact request. You can now chat.",
+          "timestamp": 1757288946331,
+          "meta": {
+            "type": "contact_accepted",
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e"
+          }
+        }
+      ],
+      "updatedAt": 1757288946331
+    },
+    {
+      "id": "chat-10ce2b82-68bb-4731-9e42-84252e680026",
+      "type": "direct",
+      "participants": [
+        "brr",
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "m-d0c86e4a-f326-4dd5-9831-5a0ad75f5e1c",
+          "sender": "admin",
+          "text": "brr brr patapim",
+          "timestamp": 1757288960560,
+          "meta": {}
+        }
+      ],
+      "updatedAt": 1757288960560
+    }
+  ],
+  "messages": {},
+  "contactRequests": [
+    {
+      "id": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e",
+      "from": "brr",
+      "to": "admin",
+      "status": "accepted",
+      "timestamp": 1757288930419,
+      "resolvedAt": 1757288946331
+    }
+  ],
+  "meta": {
+    "lastModified": 1757289534619
+  }
+}
