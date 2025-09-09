@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "user-c01bc093-f491-48e6-afaa-823dc46c6227",
+      "username": "brrdak",
+      "passwordHash": "$2b$10$92riQb3lLmIbeaoWEVcGs.kLhvxWfaZhYW6/tBny5K.SGPuYGpwXe",
+      "contactNumber": "C-612233",
+      "createdAt": 1757290323367,
+      "lastSeen": 1757290457908
+    }
+  ],
+  "chats": [
+    {
+      "id": "inbox-brrdak",
+      "type": "inbox",
+      "participants": [
+        "brrdak"
+      ],
+      "messages": [],
+      "updatedAt": 1757290323367
+    }
+  ],
+  "messages": {},
+  "contactRequests": [],
+  "meta": {
+    "lastModified": 1757290166537
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "user-d2bd8ec6-719a-4ee1-bb1a-095918ac6a5f",
+      "username": "rrrr",
+      "passwordHash": "$2b$10$uAXsSa7MYcljMv3EBT2qCuxjUDW3raOJSmmVVyjbpug1xRGXDuHB2",
+      "contactNumber": "C-302591",
+      "createdAt": 1757385057321,
+      "lastSeen": 1757385113639
+    },
+    {
+      "id": "user-1e7d5bc8-5871-46f4-90f0-4d62fa4f873f",
+      "username": "rrer",
+      "passwordHash": "$2b$10$YL11052/PLlaECMoiCfjROSWbIfKhya7MSvqoG3yoJRTR7skwEGbG",
+      "contactNumber": "C-674923",
+      "createdAt": 1757385121393,
+      "lastSeen": 1757385154971
+    }
+  ],
+  "chats": [
+    {
+      "id": "inbox-rrrr",
+      "type": "inbox",
+      "participants": [
+        "rrrr"
+      ],
+      "messages": [],
+      "updatedAt": 1757385057321
+    },
+    {
+      "id": "inbox-rrer",
+      "type": "inbox",
+      "participants": [
+        "rrer"
+      ],
+      "messages": [],
+      "updatedAt": 1757385121393
+    }
+  ],
+  "messages": [],
+  "contactRequests": [],
+  "meta": {
+    "lastModified": 1757290664696
+  }
+}

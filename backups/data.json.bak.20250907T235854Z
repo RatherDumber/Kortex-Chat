@@ -1,0 +1,241 @@
+{
+  "users": [
+    {
+      "id": "user-4ff1c901-df24-421f-8d64-adf7abfe4e17",
+      "username": "admin",
+      "passwordHash": "$2b$10$JmYUn2d.YfLc6OCJbZQLxu1fkvEfRdavwO9XP7gVp3OXWy4ZkyWbK",
+      "contactNumber": "C-640095",
+      "createdAt": 1757254013454,
+      "lastSeen": 1757288962186
+    },
+    {
+      "id": "user-2360a989-6fab-4e0f-a4de-4619ae30467b",
+      "username": "test",
+      "passwordHash": "$2b$10$0VfTF5g/4Dh8o2eOtxvIJ.1jAMwHJTPOPXuktUot50VaTIhs3UAEm",
+      "contactNumber": "C-966469",
+      "createdAt": 1757255767716,
+      "lastSeen": 1757256324989
+    },
+    {
+      "id": "user-c709d367-4b43-4b6a-980a-e34c255b00c0",
+      "username": "test2",
+      "passwordHash": "$2b$10$VgQ8kcYrRGwxlauY4cr2E.JSWkNWwTrrWXcpGSFJ03ZkXeUODu4qe",
+      "contactNumber": "C-812606",
+      "createdAt": 1757255898906,
+      "lastSeen": 1757256041198
+    },
+    {
+      "id": "user-5f84a393-54b8-4328-99f7-520e33cfa8bf",
+      "username": "brr",
+      "passwordHash": "$2b$10$cPDX7y1HG7r3WSrZErb4c.L8UOgrctvsJFElN4w4aT4EcprFMcJ5u",
+      "contactNumber": "C-250280",
+      "createdAt": 1757288882775,
+      "lastSeen": 1757288965092
+    }
+  ],
+  "chats": [
+    {
+      "id": "inbox-admin",
+      "type": "inbox",
+      "participants": [
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "m-2bc6690a-346f-4a6a-ab3d-376357baff8e",
+          "sender": "system",
+          "text": "brr sent you a contact request.",
+          "timestamp": 1757288930419,
+          "meta": {
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e",
+            "type": "contact_request",
+            "from": "brr"
+          }
+        },
+        {
+          "id": "m-490a941b-6c72-4512-9cea-f366d8e2afea",
+          "sender": "system",
+          "text": "You accepted brr's contact request. A chat has been created.",
+          "timestamp": 1757288946331,
+          "meta": {
+            "type": "contact_accepted",
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e"
+          }
+        }
+      ],
+      "updatedAt": 1757288946331
+    },
+    {
+      "id": "inbox-test",
+      "type": "inbox",
+      "participants": [
+        "test"
+      ],
+      "messages": [],
+      "updatedAt": 1757255767716
+    },
+    {
+      "id": "chat-875b636c-639b-4967-a677-da09be8acccb",
+      "type": "direct",
+      "participants": [
+        "test",
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "m-c3c660ef-8f2a-4e6b-aafc-98caff8323ed",
+          "sender": "test",
+          "text": "hello",
+          "timestamp": 1757255789682,
+          "meta": {}
+        },
+        {
+          "id": "m-9847e79b-b4f2-4deb-9c29-813e41849776",
+          "sender": "admin",
+          "text": "test completed.",
+          "timestamp": 1757255824250,
+          "meta": {}
+        },
+        {
+          "id": "m-a4e698e3-e98e-47b6-ac0f-98e8c989a2d1",
+          "sender": "test",
+          "text": "test: TIME REPORT",
+          "timestamp": 1757256009038,
+          "meta": {}
+        },
+        {
+          "id": "m-1f47f87d-cc8f-4064-82fe-ffebf35dadce",
+          "sender": "test",
+          "text": "test: TIME REPORT: pass",
+          "timestamp": 1757256022589,
+          "meta": {}
+        },
+        {
+          "id": "m-bbd755ac-f5bd-4c3b-bd42-e0b74c7126e0",
+          "sender": "admin",
+          "text": "Hey",
+          "timestamp": 1757256269938,
+          "meta": {}
+        },
+        {
+          "id": "m-09f790dd-4cff-47e4-b7e3-3558f3c2de01",
+          "sender": "admin",
+          "text": "Realtume report: pass",
+          "timestamp": 1757256287567,
+          "meta": {}
+        },
+        {
+          "id": "m-a7a71a7e-aaff-4b46-904f-19f7f813fcb0",
+          "sender": "test",
+          "text": "passed all test successfully.",
+          "timestamp": 1757256306172,
+          "meta": {}
+        }
+      ],
+      "updatedAt": 1757256306172
+    },
+    {
+      "id": "inbox-test2",
+      "type": "inbox",
+      "participants": [
+        "test2"
+      ],
+      "messages": [],
+      "updatedAt": 1757255898906
+    },
+    {
+      "id": "chat-dbd0f24c-aa56-476c-a306-023781a534a0",
+      "type": "direct",
+      "participants": [
+        "test2",
+        "admin"
+      ],
+      "messages": [],
+      "updatedAt": 1757255907814
+    },
+    {
+      "id": "chat-acddfc7b-4d26-4898-b7df-4e6fce07d18f",
+      "type": "direct",
+      "participants": [
+        "test2",
+        "test"
+      ],
+      "messages": [
+        {
+          "id": "m-35815f17-a0b8-4e32-894c-002d9ab0c129",
+          "sender": "test2",
+          "text": "test2 report",
+          "timestamp": 1757255937559,
+          "meta": {}
+        },
+        {
+          "id": "m-f9dbe03c-57ac-43eb-bfad-0c875a566fa1",
+          "sender": "test2",
+          "text": "report working",
+          "timestamp": 1757255949019,
+          "meta": {}
+        },
+        {
+          "id": "m-9d1452d2-cc89-417c-968e-85b38e72b9ea",
+          "sender": "test",
+          "text": "test working report.",
+          "timestamp": 1757255979764,
+          "meta": {}
+        }
+      ],
+      "updatedAt": 1757255979764
+    },
+    {
+      "id": "inbox-brr",
+      "type": "inbox",
+      "participants": [
+        "brr"
+      ],
+      "messages": [
+        {
+          "id": "m-5dad4899-d423-4c4a-b5e9-72c7aaf269b5",
+          "sender": "system",
+          "text": "admin accepted your contact request. You can now chat.",
+          "timestamp": 1757288946331,
+          "meta": {
+            "type": "contact_accepted",
+            "requestId": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e"
+          }
+        }
+      ],
+      "updatedAt": 1757288946331
+    },
+    {
+      "id": "chat-10ce2b82-68bb-4731-9e42-84252e680026",
+      "type": "direct",
+      "participants": [
+        "brr",
+        "admin"
+      ],
+      "messages": [
+        {
+          "id": "m-d0c86e4a-f326-4dd5-9831-5a0ad75f5e1c",
+          "sender": "admin",
+          "text": "brr brr patapim",
+          "timestamp": 1757288960560,
+          "meta": {}
+        }
+      ],
+      "updatedAt": 1757288960560
+    }
+  ],
+  "messages": {},
+  "contactRequests": [
+    {
+      "id": "req-49a0ac63-c2a3-4ae6-997a-fc1ab459440e",
+      "from": "brr",
+      "to": "admin",
+      "status": "accepted",
+      "timestamp": 1757288930419,
+      "resolvedAt": 1757288946331
+    }
+  ],
+  "meta": {
+    "lastModified": 0
+  }
+}
