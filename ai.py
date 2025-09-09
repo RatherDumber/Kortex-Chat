@@ -3,7 +3,7 @@ import sys
 import json
 
 client = OpenAI(
-    api_key="78c77b62-70b9-492c-bafd-bd44925ed00c",
+    api_key="no api key to see :3",
     base_url="https://api.sambanova.ai/v1",
 )
 
